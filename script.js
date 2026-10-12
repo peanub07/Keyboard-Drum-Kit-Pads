@@ -19,8 +19,12 @@ const midTom = new Audio(
 const highTom = new Audio(
   "resources/sounds/A Real Freakin Drum Kit/real-03.TOM2C-L.wav",
 );
-
-//TODO: add crashMain (low pitch), crashSide (higher pitch), ride, and cowbell
+const ride = new Audio(
+  "resources/sounds/A Real Freakin Drum Kit/real-02BL20RKRM.wav",
+);
+const crashSide = new Audio(
+  "resources/sounds/A Real Freakin Drum Kit/real-01TP20CHIM.wav",
+);
 
 /** @param {HTMLAudioElement} */
 function playSound(instrument, vol = 1.0) {
@@ -37,26 +41,42 @@ document.addEventListener("keydown", function (event) {
       playSound(lowTom, 1);
       break;
     case "a":
-      playSound(lowTom, 0.88);
-      break;
-    case "s":
       playSound(midTom, 0.35);
       break;
-    case "d":
+    case "s":
       playSound(highTom, 0.36);
+      break;
+    case "d":
+      playSound(ride, 0.36);
       break;
     case "f":
     case " ":
-      playSound(snare, 0.9);
+      playSound(snare, 0.85);
       break;
     case "j":
-      playSound(kick, 0.9);
+      playSound(kick, 0.91);
       break;
     case "k":
       playSound(hiHatClosed, 0.42);
       break;
     case "m":
       playSound(hiHatOpen, 0.4);
+      break;
+    case "e":
+      playSound(crashSide, 0.85);
+      break;
+    case "i":
+    case "enter":
+      const crashMain = new Audio(
+        "resources/sounds/djdominik7-crash_01-602468.mp3",
+      );
+      playSound(crashMain, 0.3);
+      break;
+    case "r":
+      const cowbell = new Audio(
+        "resources/sounds/mrstokes302-phonk-cowbell-sfx-mrstokes302-423123.mp3",
+      );
+      playSound(cowbell, 0.25);
       break;
     default:
       break;
