@@ -1,13 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Keyboard Drum Kit Pads</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Keyboard Drum Kit Pads</h1>
-    <button class="f drum">f</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
+    <div class="drumset">
+      <div class="leftHandSide">
+        <span>
+          <button class="e_crashSide pad">e</button>
+          <button class="r_cowbell pad">r</button>
+        </span>
+        <span>
+          <button class="a_midTom pad">a</button>
+          <button class="s_highTom pad">s</button>
+          <button class="d_ride pad">d</button>
+          <button class="f_snare pad">f</button>
+        </span>
+        <button class="shift_lowTom pad">shift</button>
+      </div>
+
+      <div class="rightHandSide">
+        <button class="i_crashMain pad">l</button>
+        <span>
+          <button class="j_kick pad">j</button>
+          <button class="k_hiHatClosed pad">k</button>
+        </span>
+        <button class="m_hiHatOpen pad">m</button>
+      </div>
+    </div>
   </body>
 </html>
