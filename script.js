@@ -36,6 +36,10 @@ function playSound(instrument, vol = 1.0) {
 document.addEventListener("keydown", function (event) {
   let key = event.key.toLowerCase();
   console.log(key);
+  triggerPad(key);
+});
+
+function triggerPad(key) {
   switch (key) {
     case "shift":
       playSound(lowTom, 1);
@@ -65,8 +69,9 @@ document.addEventListener("keydown", function (event) {
     case "e":
       playSound(crashSide, 0.85);
       break;
-    case "i":
     case "enter":
+      playSound(crashSide, 0.85);
+    case "i":
       const crashMain = new Audio(
         "resources/sounds/djdominik7-crash_01-602468.mp3",
       );
@@ -81,4 +86,4 @@ document.addEventListener("keydown", function (event) {
     default:
       break;
   }
-});
+}

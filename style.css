@@ -4,10 +4,16 @@ body {
   justify-content: center;
   margin: 0;
   max-width: 80%;
+
+  background-color: darkolivegreen;
 }
 
 .pad {
   padding: 50px;
+}
+
+button:active {
+  background-color: rgb(0, 0, 0);
 }
 
 .drumset {
