@@ -12,7 +12,7 @@ body {
   padding: 50px;
 }
 
-button:active {
+button:active, .activatedPad {
   background-color: rgb(0, 0, 0);
 }
 
