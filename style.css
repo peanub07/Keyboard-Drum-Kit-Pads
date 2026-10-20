@@ -5,7 +5,7 @@ body {
   margin: 0;
   max-width: 80%;
 
-  background-color: darkolivegreen;
+  background-color: hsl(82, 39%, 30%);
 }
 
 .pad {
@@ -16,8 +16,8 @@ body {
 }
 
 .activatedPad {
-  background-color: rgb(0, 0, 0);
-  /* box-shadow: ; */
+  background-color: hsl(0, 6%, 80%);
+  box-shadow: 0 0 4px 6px hsl(82, 39%, 27%);
 }
 
 .drumset {
