@@ -61,14 +61,14 @@ function triggerPad(key) {
       playSound(highTom, 0.36);
       break;
     case "d":
-      playSound(ride, 0.36);
+      playSound(ride, 0.34);
       break;
     case "f":
     case " ":
-      playSound(snare, 0.85);
+      playSound(snare, 0.89);
       break;
     case "j":
-      playSound(kick, 0.91);
+      playSound(kick, 0.94);
       break;
     case "k":
       playSound(hiHatClosed, 0.42);

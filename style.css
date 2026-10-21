@@ -18,6 +18,7 @@ body {
 .activatedPad {
   background-color: hsl(0, 6%, 80%);
   box-shadow: 0 0 4px 6px hsl(82, 39%, 27%);
+  transform: scale(0.99);
 }
 
 .drumset {
