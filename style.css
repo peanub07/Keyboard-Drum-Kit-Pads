@@ -1,9 +1,15 @@
+/** above 900px viewport width, following css applies, 
+  * below 900px it would be css for mobile devices 
+  */
+
 body {
+  margin: 0 auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0;
   max-width: 80%;
+  /* justify-content: center; */
+  align-items: center;
 
   background-color: hsl(82, 39%, 30%);
 }
@@ -24,10 +30,11 @@ body {
 .drumset {
   display: flex;
   justify-content: space-between;
-  /* max-width: 50%; */
+  min-width: 66%;
 }
 
-.leftHandSide, .rightHandSide {
+.leftHandSide,
+.rightHandSide {
   display: flex;
   flex-direction: column;
 }
@@ -38,4 +45,12 @@ body {
 
 .rightHandSide {
   align-items: start;
+}
+
+.leftHandSide > :last-child {
+  align-self: start;
+}
+
+.rightHandSide > :last-child {
+  align-self: end;
 }
